@@ -1,6 +1,6 @@
 {
   "name": "rate-limit-queue",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Queues up functions to follow a specified rate limit",
   "main": "index.js",
   "author": "David Fox",
