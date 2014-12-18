@@ -9,7 +9,7 @@
 
   // CommonJS
   if (typeof exports === 'object' && typeof module === 'object') {
-    module.exports = definition;
+    module.exports = definition();
 
   // RequireJS
   } else if (typeof define === 'function' && define.amd) {
@@ -17,7 +17,7 @@
 
   // <script>
   } else if (typeof self !== 'undefined') {
-    self.RateLimitQueue = definition;
+    self.RateLimitQueue = definition();
 
   } else {
     throw new Error('This environment was not anticiapted by RateLimitQueue. Please file a bug.');
